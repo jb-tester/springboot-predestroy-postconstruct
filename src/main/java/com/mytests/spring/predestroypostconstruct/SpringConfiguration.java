@@ -23,4 +23,9 @@ public class SpringConfiguration {
     public MyPrototypeBean myprotobean() {
         return new MyPrototypeBean();
     }
+
+    @Bean(initMethod = "initThisBean", destroyMethod = "destroyThisBean")
+    public MyBeanWithExplicitInitDestroy myBeanWithExplicitInitDestroy() {
+        return new MyBeanWithExplicitInitDestroy();
+    }
 }

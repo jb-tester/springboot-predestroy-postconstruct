@@ -19,6 +19,6 @@ public class SpringbootPredestroyPostconstructApplication implements CommandLine
     public void run(String... args) throws Exception {
         MySingletonBean mb1 = ctx.getBean(MySingletonBean.class);
         MyPrototypeBean mb2 = ctx.getBean(MyPrototypeBean.class);
-
+        MyBeanWithExplicitInitDestroy mb3 = ctx.getBean(MyBeanWithExplicitInitDestroy.class);
     }
 }
