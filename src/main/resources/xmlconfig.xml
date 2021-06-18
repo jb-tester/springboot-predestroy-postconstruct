@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd"
+       default-init-method="init_bean" default-destroy-method="destroy_bean">
+       <context:component-scan base-package="com.mytests.spring.predestroypostconstruct.xmlConfig.beans"/>
+       <bean class="com.mytests.spring.predestroypostconstruct.xmlConfig.beans.Bean2" id="bean2"/>
+       <bean class="com.mytests.spring.predestroypostconstruct.xmlConfig.beans.Bean3" id="bean3" init-method="personal_init" />
+</beans>
