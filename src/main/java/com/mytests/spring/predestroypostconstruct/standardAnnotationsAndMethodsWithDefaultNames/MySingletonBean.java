@@ -1,4 +1,4 @@
-package com.mytests.spring.predestroypostconstruct;
+package com.mytests.spring.predestroypostconstruct.standardAnnotationsAndMethodsWithDefaultNames;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -19,6 +19,7 @@ public class MySingletonBean {
 		System.out.println("Preparing to close MySingletonBean");
 	}
 
+	// default destroy methods are shown as unused - https://youtrack.jetbrains.com/issue/IDEA-270643
 	public void close() {
 		System.out.println("Closing MySingletonBean");
 	}

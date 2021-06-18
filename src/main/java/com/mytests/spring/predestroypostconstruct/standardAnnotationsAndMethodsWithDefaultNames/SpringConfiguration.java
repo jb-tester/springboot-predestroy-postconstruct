@@ -1,4 +1,4 @@
-package com.mytests.spring.predestroypostconstruct;
+package com.mytests.spring.predestroypostconstruct.standardAnnotationsAndMethodsWithDefaultNames;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

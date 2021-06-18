@@ -1,4 +1,4 @@
-package com.mytests.spring.predestroypostconstruct;
+package com.mytests.spring.predestroypostconstruct.standardAnnotationsAndMethodsWithDefaultNames;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
